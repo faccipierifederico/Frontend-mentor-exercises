@@ -19,6 +19,7 @@
 
 body{
     font-family: var(--open-sans);
+    margin: 0;
 }
 
 .container{
@@ -31,6 +32,7 @@ body{
 
 .hero{
     min-height: 100vh;
+    width: 100%;
     position: relative;
     --wave-bottom: url('../01/images/bg-section-top-mobile-1.svg');
 }
@@ -142,6 +144,10 @@ body{
     background-image: var(--wave-top);
 }
 
+.main{
+    width: 100%;
+}
+
 .section{
     background-color: var(--Very-pale-blue);
     --padding-container: 110px 0;
@@ -175,5 +181,92 @@ body{
 .subtitle{
     margin-bottom: 16px;
     font-family: var(--poppins);
+}
+
+.question{
+    position: relative;
+    text-align: center;
+    --wave-top: url('../01/images/bg-section-bottom-mobile-2.svg');
+    --wave-bottom: url('../01/images/bg-footer-top-mobile.svg');
+    --padding-container: 190px 0 210px;
+}
+
+.footer{
+    color: #fff;
+    background-color: var(--Very-dark-cyan);
+    width: 100%;
+}
+
+.footer-title{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+    font-family: var(--poppins);
+}
+
+.footer-paragraph{
+    line-height: 1.5;
+    margin: 16px 0 50px;
+}
+
+.footer-form{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+
+.footer-input{
+    flex-basis: 100%;
+    flex-grow: 1;
+    font-size: 16px;
+    font-family: var(--open-sans);
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    padding: 16px 6px;
+    margin-bottom: 20px;
+}
+
+.footer-a{
+    font-size: 16px;
+    font-family: var(--open-sans);
+    background-color: var(--pink);
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 40px;
+    margin-left: auto;
+}
+
+.footer-contact{
+    line-height: 50px;
+}
+
+.footer-contact::after{
+    content: "Phone: +1-543-123-4567";
+    margin-left: 10px;
+}
+
+.footer-contact-email::after{
+    content: "example@huddle.com";
+}
+
+.footer-social{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    gap: 16px;
+}
+
+.footer-link{
+    text-decoration: none;
+    width: 40px;
+}
+
+.footer-icon{
+    width: 100%;
+    display: block;
+
 }
 
