@@ -30,8 +30,9 @@ body{
 }
 
 .hero{
-    /* min-height: 100vh; */
+    min-height: 100vh;
     position: relative;
+    --wave-bottom: url('../01/images/bg-section-top-mobile-1.svg');
 }
 
 .hero-nav{
@@ -54,6 +55,7 @@ body{
 
 .hero-a{
     color: var(--Light-pink);
+    text-decoration: none;
     text-align: none;
     border: 2px solid;
     padding: 6px 16px;
@@ -61,3 +63,117 @@ body{
     font-weight: 600;
     box-shadow: 0 0 1px;
 }
+
+.hero-main{
+    text-align: center;
+    color: var(--Very-dark-cyan);
+}
+
+.hero-title{
+    font-family: var(--poppins);
+}
+
+.hero-paragraph{
+    margin: 16px auto;
+    width: 90%;
+    line-height: 1.5;
+}
+
+.a{
+    display: inline-block;
+    background-color: var(--pink);
+    color: #fff;
+    text-decoration: none;
+    padding: 16px 30px;
+    border-radius: 30px;
+    margin-top: 16px;
+}
+
+.hero-picture{
+    margin: 80px 0 0;
+}
+
+.hero-img{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: block;
+}
+
+.hero-numbers{
+    display: flex;
+    margin-top: 80px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+    gap: 60px;
+}
+
+.hero-item{
+    overflow: hidden;
+}
+
+.hero-number{
+    font-size: 60px;
+}
+
+.hero-icon{
+    display: block;
+}
+
+.wave{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: 100% 100px;
+}
+
+.wave-bottom{
+    left: 0;
+    bottom: 0;
+    background-image: var(--wave-bottom);
+}
+
+.wave-top{
+    left: 0;
+    top: 0;
+    background-image: var(--wave-top);
+}
+
+.section{
+    background-color: var(--Very-pale-blue);
+    --padding-container: 110px 0;
+}
+
+.section-white{
+    background-color: #fff;
+    position: relative;
+    --padding-container: 210px 0;
+    --wave-top: url('../01/images/bg-section-bottom-mobile-1.svg');
+    --wave-bottom: url('../01/images/bg-section-top-mobile-1.svg');
+}
+
+.section-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.section-img{
+    width: 100%;
+    max-width: 350px;
+    display: block;
+    margin: 0 auto;
+}
+
+.section-texts{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.subtitle{
+    margin-bottom: 16px;
+    font-family: var(--poppins);
+}
+
